@@ -3,7 +3,7 @@ import axios from 'axios';
 
 // Create a separate axios instance for better control
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || 'http://localhost:5000/api',
+  baseURL: import.meta.env.REACT_APP_API_URL || 'http://localhost:5000/api',
   withCredentials: true
 });
 
